@@ -1,8 +1,16 @@
 
-function show_form() {
+function TampilkanData() {
     let form_el = document.querySelector("#theForm");
   
     form_el.style.display = "block";
+
+    document.querySelector("#inputNama").value = document.querySelector("#displayNama").innerText;
+    document.querySelector("#inputRole").value = document.querySelector("#displayRole").innerText;
+    document.querySelector("#inputAvailability").value = document.querySelector("#displayAvailability").innerText;
+    document.querySelector("#inputUsia").value = document.querySelector("#displayUsia").innerText;
+    document.querySelector("#inputLokasi").value = document.querySelector("#displayLokasi").innerText;
+    document.querySelector("#inputPengalaman").value = document.querySelector("#displayPengalaman").innerText;
+    document.querySelector("#inputEmail").value = document.querySelector("#displayEmail").innerText;
 }
 
 function submit_form() {
